@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  
+    
+    h2 Productos
+
+    if productos.length
+        table
+            thead
+                tr
+                    th Nombre
+                    th Precio
+                    th Imagen
+            tbody
+                each product in productos
+                    tr
+                        th= product.title
+                        td= product.price
+                        td
+                            img(src=product.thumbnail alt='Product image' width="150px")
+    else          
+        h2 No hay existencias ...
+        p Agregue un producto
+
+    a(href='/productos/agregarProducto')
+        button Ir a agregar producto
+        

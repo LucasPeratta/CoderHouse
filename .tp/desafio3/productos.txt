@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Tv",
+    "price": "100usd",
+    "thumbnail": "https://shop.samsung.com/ar/50-uhd-4k-smart-tv-au7000/p",
+    "id": 1
+  },
+  {
+    "title": "phone",
+    "price": "150usd",
+    "thumbnail": "https://shop.samsung.com/ar/celular-galaxy-s22-ultra/p",
+    "id": 2
+  },
+  {
+    "title": "ps5",
+    "price": "500usd",
+    "thumbnail": "https://www.fravega.com/p/sony-playstation-5-825gb-standard-color-blanco-y-negro-342748/",
+    "id": 3
+  }
+]

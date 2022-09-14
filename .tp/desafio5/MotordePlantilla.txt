@@ -1,0 +1,1 @@
+Para mi proyecto voy a elegir el motor de plantillas Pug. Simplemente porque fue el que me resulto mas facil de ejecutar a la hora de hacer el desafio
