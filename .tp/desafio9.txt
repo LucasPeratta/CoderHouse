@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Desafio 9 (clase 18)
 
 ## 1) - 2) Agrego documentos con root
@@ -439,3 +440,446 @@ e) Borrar los productos con precio menor a 1000 pesos
   { ok: 1 }
 ```
 
+=======
+# Desafio 9 (clase 18)
+
+## 1) - 2) Agrego documentos con root
+
+### Input
+
+```sh
+> db.products.insertMany([{title: 'remera', price: 2300, thumbnail: 'none'}, {title: 'cordon', price: 120, thumbnail: 'none'}, {title: 'pulsera', price: 580, thumbnail: 'none'}, {title: 'soquetes', price: 900, thumbnail: 'none'}, {title: 'medias', price: 1280, thumbnail: 'none'}, {title: 'vincha', price: 1700, thumbnail: 'none'}, {title: 'gorra', price: 2860, thumbnail: 'none'}, {title: 'short', price: 3350, thumbnail: 'none'}, {title: 'buzo', price: 4320, thumbnail: 'none'}, {title: 'pantalon', price: 4990, thumbnail: 'none'}])
+```
+
+### Output
+
+```sh
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("6329e4cd46e7d89a562cf1aa"),
+    '1': ObjectId("6329e4cd46e7d89a562cf1ab"),
+    '2': ObjectId("6329e4cd46e7d89a562cf1ac"),
+    '3': ObjectId("6329e4cd46e7d89a562cf1ad"),
+    '4': ObjectId("6329e4cd46e7d89a562cf1ae"),
+    '5': ObjectId("6329e4cd46e7d89a562cf1af"),
+    '6': ObjectId("6329e4cd46e7d89a562cf1b0"),
+    '7': ObjectId("6329e4cd46e7d89a562cf1b1"),
+    '8': ObjectId("6329e4cd46e7d89a562cf1b2"),
+    '9': ObjectId("6329e4cd46e7d89a562cf1b3")
+  }
+}
+```
+
+### Input
+
+```sh
+db.mensajes.insertMany([{date:'ya', mail:"un@mail.com", message: "hola"},{date:'ya', mail:"un@mail.com", message: "que"}, {date:'ya', mail:"un@mail.com", message: "tal?"},{date:'ya', mail:"un@mail.com", message: "todo"},{date:'ya', mail:"un@mail.com", message: "bien?"},{date:'ya', mail:"otro@mail.com", message: "yo"},{date:'ya', mail:"otro@mail.com", message: "bien"},{date:'ya', mail:"otro@mail.com", message: "tranki"},{date:'ya', mail:"otro@mail.com", message: "y"},{date:'ya', mail:"otro@mail.com", message: "vos?"}])
+```
+### Output
+
+```sh
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("6329e50346e7d89a562cf1b4"),
+    '1': ObjectId("6329e50346e7d89a562cf1b5"),
+    '2': ObjectId("6329e50346e7d89a562cf1b6"),
+    '3': ObjectId("6329e50346e7d89a562cf1b7"),
+    '4': ObjectId("6329e50346e7d89a562cf1b8"),
+    '5': ObjectId("6329e50346e7d89a562cf1b9"),
+    '6': ObjectId("6329e50346e7d89a562cf1ba"),
+    '7': ObjectId("6329e50346e7d89a562cf1bb"),
+    '8': ObjectId("6329e50346e7d89a562cf1bc"),
+    '9': ObjectId("6329e50346e7d89a562cf1bd")
+  }
+}
+```
+
+## 3) Listar los documentos de ambas colecciones
+
+### Input
+
+```sh
+    db.mensajes.find()
+```
+
+### Output
+
+```sh
+[
+  {
+    _id: ObjectId("6329e50346e7d89a562cf1b4"),
+    date: 'ya',
+    mail: 'un@mail.com',
+    message: 'hola'
+  },
+  {
+    _id: ObjectId("6329e50346e7d89a562cf1b5"),
+    date: 'ya',
+    mail: 'un@mail.com',
+    message: 'que'
+  },
+  {
+    _id: ObjectId("6329e50346e7d89a562cf1b6"),
+    date: 'ya',
+    mail: 'un@mail.com',
+    message: 'tal?'
+  },
+  {
+    _id: ObjectId("6329e50346e7d89a562cf1b7"),
+    date: 'ya',
+    mail: 'un@mail.com',
+    message: 'todo'
+  },
+  {
+    _id: ObjectId("6329e50346e7d89a562cf1b8"),
+    date: 'ya',
+    mail: 'un@mail.com',
+    message: 'bien?'
+  },
+  {
+    _id: ObjectId("6329e50346e7d89a562cf1b9"),
+    date: 'ya',
+    mail: 'otro@mail.com',
+    message: 'yo'
+  },
+  {
+    _id: ObjectId("6329e50346e7d89a562cf1ba"),
+    date: 'ya',
+    mail: 'otro@mail.com',
+    message: 'bien'
+  },
+  {
+    _id: ObjectId("6329e50346e7d89a562cf1bb"),
+    date: 'ya',
+    mail: 'otro@mail.com',
+    message: 'tranki'
+  },
+  {
+    _id: ObjectId("6329e50346e7d89a562cf1bc"),
+    date: 'ya',
+    mail: 'otro@mail.com',
+    message: 'y'
+  },
+  {
+    _id: ObjectId("6329e50346e7d89a562cf1bd"),
+    date: 'ya',
+    mail: 'otro@mail.com',
+    message: 'vos?'
+  }
+]
+```
+
+### Input 
+
+```sh
+    db.products.find()
+```
+
+### Output
+
+```sh
+[
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1aa"),
+    title: 'remera',
+    price: 2300,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1ab"),
+    title: 'cordon',
+    price: 120,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1ac"),
+    title: 'pulsera',
+    price: 580,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1ad"),
+    title: 'soquetes',
+    price: 900,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1ae"),
+    title: 'medias',
+    price: 1280,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1af"),
+    title: 'vincha',
+    price: 1700,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1b0"),
+    title: 'gorra',
+    price: 2860,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1b1"),
+    title: 'short',
+    price: 3350,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1b2"),
+    title: 'buzo',
+    price: 4320,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1b3"),
+    title: 'pantalon',
+    price: 4990,
+    thumbnail: 'none'
+  }
+]
+```
+
+## 4) Muestro la cantidad de documentos guardados en cad colleccion
+
+### Input
+
+```sh
+  db.mensajes.estimatedDocumentCount()
+```
+
+### Output
+
+```sh
+  10
+```
+
+### Input
+
+```sh
+  db.mensajes.estimatedDocumentCount()
+```
+
+### Output
+
+```sh
+  10
+```
+
+## 5) CRUD
+
+a) Agrego un nuevo producto 
+
+### Input
+
+```sh
+  db.products.insertOne({title:"ojotas", price: 4330, image: "none"})
+```
+
+### Output
+
+```sh
+ {0
+  acknowledged: true,
+  insertedId: ObjectId("6329e59546e7d89a562cf1be")
+}
+```
+
+b) i) Listo los productos con precio menor a 1000
+
+### Input
+
+```sh
+db.products.find({price:{$lt: 1000}})
+```
+
+### Output
+
+```sh
+[
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1ab"),
+    title: 'cordon',
+    price: 120,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1ac"),
+    title: 'pulsera',
+    price: 580,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1ad"),
+    title: 'soquetes',
+    price: 900,
+    thumbnail: 'none'
+  }
+]
+```
+
+b) ii) Listar los productos con precio entre los 1000 a 3000 pesos.
+
+### Input
+
+```sh
+  db.products.find({$and:[ {price:{$gt: 1000}}, {price:{$lt: 3000}}]})
+```
+
+### Output
+
+```sh
+ [
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1aa"),
+    title: 'remera',
+    price: 2300,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1ae"),
+    title: 'medias',
+    price: 1280,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1af"),
+test>
+    price: 1700,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1b0"),
+    title: 'gorra',
+    price: 2860,
+    thumbnail: 'none'
+  }
+]
+```  
+
+b) iii) Listar los productos con precio mayor a 3000 pesos.
+
+### Input 
+
+```sh
+  db.products.find({price:{$gt: 3000}})
+```
+
+### Output
+
+```sh
+[
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1b1"),
+    title: 'short',
+    price: 3350,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1b2"),
+    title: 'buzo',
+    price: 4320,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e4cd46e7d89a562cf1b3"),
+    title: 'pantalon',
+    price: 4990,
+    thumbnail: 'none'
+  },
+  {
+    _id: ObjectId("6329e59546e7d89a562cf1be"),
+    title: 'ojotas',
+    price: 4330,
+    image: 'none'
+  }
+]
+```
+
+b) iv) Realizar una consulta que traiga sólo el nombre del tercer producto más barato.
+
+### Input
+
+```sh
+  db.products.find({}, {'title': 1, '_id': 0}).sort({price:1}).skip(2).limit(1)
+```
+
+### Output
+
+```sh
+  [ { title: 'soquetes' } ]
+```
+
+c) Hacer una actualización sobre todos los productos, agregando el campo stock a todos ellos con un valor de 100.
+
+### Input 
+
+```sh
+  db.products.updateMany({}, { $set: {stock: 100 } })
+```
+
+### Output
+
+```sh
+  {
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 11,
+  modifiedCount: 11,
+  upsertedCount: 0
+}
+```
+
+d) Cambiar el stock a cero de los productos con precios mayores a 4000 pesos.
+
+### Input 
+
+```sh
+  db.products.updateMany({price: {$gt: 4000}}, { $set: {stock: 0 } })
+```
+
+### Output
+
+```sh
+  {
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 3,
+  modifiedCount: 3,
+  upsertedCount: 0
+}
+```
+
+e) Borrar los productos con precio menor a 1000 pesos 
+
+### Input
+
+```sh
+  db.products.deleteMany({price:{$lt: 1000}})
+```
+
+### Output
+
+```sh
+  { acknowledged: true, deletedCount: 3 }
+```
+
+## 6) Creo un usuario de solo lectura de la db coderhouse (llamada ecommerce en el enunciado)
+
+### Input
+
+```sh
+  db.createUser({user:'pepe', pwd: 'asd456', roles:[{role: 'read', db:'coderhouse'}]})
+```
+
+### Output
+
+```sh
+  { ok: 1 }
+```
+
+>>>>>>> 3851a6aadd4cf660e0ba2b6b9be53deb0c31eb54
