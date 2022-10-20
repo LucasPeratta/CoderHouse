@@ -1,0 +1,39 @@
+<%- include('partials/head.ejs')%>
+
+<div class="container mt-3">
+  <div class="jumbotron">
+    <h1>Login de usuario</h1>
+    <form action="/login" method="post" id="submit-name">
+      <div class="form-group">
+        <label for="name">
+          <em><b>Ingrese su nombre</b></em>
+        </label>
+        <input
+          id="name"
+          class="form-control"
+          type="text"
+          name="name"
+          required
+        />
+        <label for="name">
+          <em><b>Contraseña</b></em>
+        </label>
+        <input
+          id="password"
+          class="form-control"
+          type="password"
+          name="name"
+          required
+        />
+      </div>
+      <button class="btn btn-warning" type="submit" value="Submit">
+        Ingresar
+      </button>
+      <button class="btn btn-warning" type="submit" id="register">
+        Registrarse
+      </button>
+    </form>
+  </div>
+</div>
+
+<%- include('partials/foot.ejs')%>
