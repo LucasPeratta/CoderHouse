@@ -1,0 +1,67 @@
+FUNDAMENTALES:
+___Teoria de Programacion orientada a objetos (clases,obj,herencia,polimorfismo,SOLID):
+* CLASES: Una clase (en programación) es una agrupación de datos (variables o campos) y de funciones (métodos) que operan sobre esos datos.
+          A estos datos y funciones pertenecientes a una clase se les denominan variables y métodos o funciones miembro. La Programación Orientada a Objetos se basa en la programación de clases.
+* OBJ: Los objetos se crean a partir de clases, y las clases sirven como plantillas para crear objetos. A los objetos también se les llama instancias de clase.
+
+
+___Patrones de Diseño: Son una solución general, reutilizable y aplicable a diferentes problemas de diseño de software. 
+ Se trata de plantillas que identifican problemas en el sistema y proporcionan soluciones apropiadas a problemas generales a los que se han enfrentado los desarrolladores durante un largo periodo de tiempo,
+ a través de prueba y error.
+
+
+
+
+___Como funciona internet: Internet se podría definir como una red global de redes de ordenadores cuya finalidad es permitir el intercambio libre de información entre todos sus usuarios.
+
+** Ejemplo subir video a IG: La aplicación se comunica con tu teléfono diciéndole que tiene que enviar un vídeo a determinado servidor, el que almacena el contenido que se publica en Instagram.
+   Ese vídeo se dividirá en pequeños paquetes de información, que saldrán de tu teléfono e irán a parar a tu router, si empleas la conexión WiFi de tu hogar. El router será el encargado de conectar tu teléfono con Internet. 
+   Es decir, enviará el vídeo en forma de paquetes de datos a su destino, un servidor que puede estar en el mismo país, en el mismo continente, o al otro lado del océano. Para ti es indiferente, porque apenas notarás la diferencia.
+   Por lo demás, esos paquetes de información, viajarán a través de fibra óptica y cables de red que comunican los centrales y servidores intermedios de tu proveedor de Internet y 
+   de los proveedores intermedios que conectan todo el mundo con cables terrestres y submarinos. Al llegar a su destino, un router recibirá esos datos, los enviará al servidor de destino 
+   y éste compondrá el vídeo a partir de los paquetes de datos recibidos. Y publicará el vídeo en Instagram siguiendo las instrucciones con las que fue programado.
+
+
+
+
+___REST: Corresponde a la abreviatura de Representational State Transfer o transferencia del estado representacional, es un tipo de API de servicios digitales. 
+   Su tarea principal es facilitar el intercambio de información y datos entre un servicio online a través de una dirección URL y una aplicación. Estas utilizan el protocolo de HTTP,
+
+
+
+___Testing
+
+-----------------------------------------------------------------------------------------------------------
+
+AVANZADO:
+
+___Algoritmos: Una secuencia de pasos finitos bien definidos que resuelven un problema. Un algoritmo es cualquier procedimiento computacional bien definido que parte de un estado inicial y un valor o un conjunto de valores de entrada,
+ a los cuales se les aplica una secuencia de pasos computacionales finitos, produciendo una salida o solución.
+ *Básicamente todos están compuestos de tres partes principales:
+_Entrada: Se trata del conjunto de datos que el algoritmo necesita como insumo para procesar.
+_Proceso: Son los pasos necesarios aplicados por el algoritmo a la entrada recibida para poder llegar a una salida o resolución del problema.
+_Salida: Es el resultado producido por el algoritmo a partir del procesamiento de la entrada una vez terminada la ejecución del proceso.
+
+
+
+___Sistema operativo: Un sistema operativo es el software o programa más importante que se ejecuta en un computador, nos permite usarlo y darle órdenes para que haga lo que necesitamos.
+ *Gestiona los procesos de programas y aplicaciones
+ *Tambien traduce el lenguage digital en uno q podamos entender
+
+
+
+___Redes de Computaroda: Una red de computadoras es un conjunto de equipos conectados por medio de cables, señales, ondas o cualquier otro método de transporte de datos,
+ que comparten información (archivos), recursos (CD-ROM, impresoras, etc.).
+ *Las principales ventajas de las redes son, por tanto:
+
+- Compartir datos
+- El intercambio de recursos
+- Gestión centralizada de programas y datos
+- Almacenamiento y respaldo de datos centralizados
+- Compartir la potencia informática y la capacidad de almacenamiento
+- Administración simple de permisos y responsabilidades
+
+
+
+
+___Inteligencia artificial: Sistemas o máquinas que imitan la inteligencia humana para realizar tareas y pueden mejorar iterativamente a partir de la información que recopilan.
